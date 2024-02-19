@@ -609,31 +609,32 @@ driver.quit()
 
 # =================================================================================
 # 32. Plugin - ScrollElementIntoView (Search)
-# appium_options = UiAutomator2Options().load_capabilities(desired_caps.apidemos)
-# driver = webdriver.Remote(appium_server, options=appium_options)
-# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Views').click()
-# list_view = driver.find_element(by=AppiumBy.ID, value='android:id/list')
-# driver.execute_script('gesture: scrollElementIntoView',
-#                       {'scrollableView': list_view.id, 'strategy': 'accessibility id', 'selector': 'Picker',
-#                        'percentage': 50, 'direction': 'up', 'maxCount': 3})
-# sleep(2)  # For demo purpose
-# driver.quit()
+appium_options = UiAutomator2Options().load_capabilities(desired_caps.apidemos)
+driver = webdriver.Remote(appium_server, options=appium_options)
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Views').click()
+list_view = driver.find_element(by=AppiumBy.ID, value='android:id/list')
+driver.execute_script('gesture: scrollElementIntoView',
+                      {'scrollableView': list_view.id, 'strategy': 'accessibility id', 'selector': 'Picker',
+                       'percentage': 50, 'direction': 'up', 'maxCount': 3})
+sleep(2)  # For demo purpose
+driver.quit()
+
 # =================================================================================
 # 33. Plugin - Drag and Drop
-# appium_options = UiAutomator2Options().load_capabilities(desired_caps.apidemos)
-# driver = webdriver.Remote(appium_server, options=appium_options)
-# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Views').click()
-# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Drag and Drop').click()
-# el1 = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_dot_1')
-# el2 = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_dot_2')
-# driver.execute_script('gesture: dragAndDrop', {
-#     'sourceId': el1.id,
-#     'destinationId': el2.id,
-# })
-# result = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_result_text').get_attribute('text')
-# print(result)
-# sleep(2)  # For demo purpose
-# driver.quit()
+appium_options = UiAutomator2Options().load_capabilities(desired_caps.apidemos)
+driver = webdriver.Remote(appium_server, options=appium_options)
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Views').click()
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Drag and Drop').click()
+el1 = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_dot_1')
+el2 = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_dot_2')
+driver.execute_script('gesture: dragAndDrop', {
+    'sourceId': el1.id,
+    'destinationId': el2.id,
+})
+result = driver.find_element(by=AppiumBy.ID, value='io.appium.android.apis:id/drag_result_text').get_attribute('text')
+print(result)
+sleep(2)  # For demo purpose
+driver.quit()
 
 # =================================================================================
 # 34. Gestures in Mobile web browser
