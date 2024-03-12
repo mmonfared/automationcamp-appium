@@ -12,7 +12,8 @@ apidemos = {
     "appium:options": {
         "appPackage": "io.appium.android.apis",
         "appActivity": ".ApiDemos",
-        ":automationName": "UiAutomator2"
+        "automationName": "UiAutomator2",
+        # "systemPort": "8201"
     }
 }
 

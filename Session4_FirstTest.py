@@ -3,6 +3,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 from appium.options.android import UiAutomator2Options
 from time import sleep
 
+# adb shell dumpsys activity top | grep "ACTIVITY"
+
 desired_caps = {
   "appium:appPackage": "com.android.deskclock",
   "appium:appActivity": "com.android.deskclock.DeskClock",
