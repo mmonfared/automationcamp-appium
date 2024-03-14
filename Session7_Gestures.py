@@ -527,6 +527,37 @@ sleep(2)  # For demo purpose
 driver.quit()
 
 # =================================================================================
+# Drag and Drop - WebDriverIO Demo App - Actions API - W3C
+appium_options = UiAutomator2Options().load_capabilities(desired_caps.wdio)
+driver = webdriver.Remote(appium_server, options=appium_options)
+driver.implicitly_wait(5)
+driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Drag').click()
+draggable_el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'drag-c1')
+droppable_el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'drop-c1')
+
+driver.drag_and_drop(draggable_el, droppable_el)
+
+sleep(2)  # For demo purpose
+driver.quit()
+# =================================================================================
+# Drag and Drop - WebDriverIO Demo App - Mobile Gesture Commands - W3C
+appium_options = UiAutomator2Options().load_capabilities(desired_caps.wdio)
+driver = webdriver.Remote(appium_server, options=appium_options)
+driver.implicitly_wait(5)
+driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'Drag').click()
+draggable_el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'drag-c1')
+droppable_el = driver.find_element(AppiumBy.ACCESSIBILITY_ID, 'drop-c1')
+
+driver.execute_script('mobile: dragGesture', {
+    'elementId': draggable_el,
+    'endX': droppable_el.location['x'],
+    'endY': droppable_el.location['y']
+})
+
+sleep(2)  # For demo purpose
+driver.quit()
+
+# =================================================================================
 # 30. Pinch In/Out (Zoom In/Out) - Mobile Gesture Commands - W3C
 appium_options = UiAutomator2Options().load_capabilities(desired_caps.maps)
 driver = webdriver.Remote(appium_server, options=appium_options)

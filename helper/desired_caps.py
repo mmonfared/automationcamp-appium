@@ -30,3 +30,10 @@ maps = {
     "platformName": "Android",
     "appium:automationName": "UiAutomator2"
 }
+
+wdio = {
+    "appium:appPackage": "com.wdiodemoapp",
+    "appium:appActivity": ".MainActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2"
+}
