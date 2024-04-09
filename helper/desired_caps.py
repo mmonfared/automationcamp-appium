@@ -37,3 +37,10 @@ wdio = {
     "platformName": "Android",
     "appium:automationName": "UiAutomator2"
 }
+
+uidesign = {
+    "appium:appPackage": "uidesigns.withsourcecode",
+    "appium:appActivity": ".activities.MainActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2"
+}
