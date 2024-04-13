@@ -44,3 +44,10 @@ uidesign = {
     "platformName": "Android",
     "appium:automationName": "UiAutomator2"
 }
+
+amazon = {
+    "appium:appPackage": "com.amazon.mShop.android.shopping",
+    "appium:appActivity": "com.amazon.mShop.splashscreen.StartupActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2"
+}
