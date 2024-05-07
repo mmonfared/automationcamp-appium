@@ -35,7 +35,7 @@ wdio = {
     "appium:appPackage": "com.wdiodemoapp",
     "appium:appActivity": ".MainActivity",
     "platformName": "Android",
-    "appium:automationName": "UiAutomator2"
+    "appium:automationName": "UiAutomator2",
 }
 
 uidesign = {
@@ -50,4 +50,12 @@ amazon = {
     "appium:appActivity": "com.amazon.mShop.splashscreen.StartupActivity",
     "platformName": "Android",
     "appium:automationName": "UiAutomator2"
+}
+
+swaglab = {
+    "appium:appPackage": "com.swaglabsmobileapp",
+    "appium:appActivity": ".SplashActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    # "appium:systemPort": "8201"
 }
