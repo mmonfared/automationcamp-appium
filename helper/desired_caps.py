@@ -59,3 +59,18 @@ swaglab = {
     "appium:automationName": "UiAutomator2",
     # "appium:systemPort": "8201"
 }
+
+clockify = {
+    "appium:appPackage": "me.clockify.android",
+    "appium:appActivity": ".presenter.screens.main.MainActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+}
+
+chrome_app = {
+    "appium:appPackage": "com.android.chrome",
+    "appium:appActivity": "com.google.android.apps.chrome.Main",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "noReset": True
+}
