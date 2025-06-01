@@ -74,3 +74,10 @@ chrome_app = {
     "appium:automationName": "UiAutomator2",
     "noReset": True
 }
+
+otp_app = {
+    "appium:appPackage": "ir.automationcamp.otp",
+    "appium:appActivity": ".MainActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+}

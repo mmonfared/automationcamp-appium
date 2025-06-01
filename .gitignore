@@ -1,3 +1,4 @@
 .idea
-temp.py
-test.py
+temp*.py
+test*.py
+
