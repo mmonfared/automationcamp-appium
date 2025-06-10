@@ -81,3 +81,11 @@ otp_app = {
     "platformName": "Android",
     "appium:automationName": "UiAutomator2",
 }
+
+permissions_app = {
+    "appium:appPackage": "ir.automationcamp.permissions",
+    "appium:appActivity": ".MainActivity",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    # "autoGrantPermissions": True
+}
