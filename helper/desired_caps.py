@@ -28,7 +28,8 @@ maps = {
     "appium:appPackage": "com.google.android.apps.maps",
     "appium:appActivity": "com.google.android.maps.MapsActivity",
     "platformName": "Android",
-    "appium:automationName": "UiAutomator2"
+    "appium:automationName": "UiAutomator2",
+    "autoGrantPermissions": True # Session17
 }
 
 wdio = {
