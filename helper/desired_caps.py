@@ -24,12 +24,19 @@ contacts = {
     "appium:automationName": "UiAutomator2"
 }
 
+contacts2 = {
+    "appium:appPackage": "com.google.android.contacts",
+    "appium:appActivity": "com.android.contacts.activities.PeopleActivity ",
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2"
+}
+
 maps = {
     "appium:appPackage": "com.google.android.apps.maps",
     "appium:appActivity": "com.google.android.maps.MapsActivity",
     "platformName": "Android",
     "appium:automationName": "UiAutomator2",
-    "autoGrantPermissions": True # Session17
+    "autoGrantPermissions": True  # Session17
 }
 
 wdio = {
